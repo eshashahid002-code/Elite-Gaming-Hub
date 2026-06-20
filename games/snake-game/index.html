@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Snake Next Pro Level</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🐍 SNAKE NEXT PRO LEVEL</h1>
+
+<div id="menu">
+    <button onclick="startGame()">▶ Play</button>
+</div>
+
+<p>
+Score: <span id="score">0</span> |
+Level: <span id="level">1</span> |
+🏆 High: <span id="high">0</span>
+</p>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<div class="controls">
+    <button onclick="setDir('UP')">⬆️</button>
+    <div>
+        <button onclick="setDir('LEFT')">⬅️</button>
+        <button onclick="setDir('RIGHT')">➡️</button>
+    </div>
+    <button onclick="setDir('DOWN')">⬇️</button>
+</div>
+
+<br>
+
+<button onclick="restart()">Restart 🔄</button>
+
+<audio id="eatSound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+<audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

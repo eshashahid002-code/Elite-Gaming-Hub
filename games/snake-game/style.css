@@ -1,0 +1,33 @@
+body{
+    text-align:center;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+canvas{
+    background:#222;
+    border:2px solid #00ff88;
+    margin-top:10px;
+    touch-action:none; /* swipe enable */
+}
+
+button{
+    margin:5px;
+    padding:10px 15px;
+    border:none;
+    background:#00ff88;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.controls button{
+    width:60px;
+    height:60px;
+}
+
+#menu button{
+    font-size:18px;
+    padding:12px 25px;
+}

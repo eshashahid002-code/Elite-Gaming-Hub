@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memory Game PRO MAX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 MEMORY GAME PRO MAX</h1>
+
+<div id="menu">
+    <h2>Select Level</h2>
+    <button onclick="startGame(1)">Easy</button>
+    <button onclick="startGame(2)">Medium</button>
+    <button onclick="startGame(3)">Hard</button>
+
+    <p>🏆 Best Score: <span id="best">0</span></p>
+    <p>💰 Coins: <span id="coins">0</span></p>
+</div>
+
+<div id="hud">
+    Level: <span id="level">-</span> |
+    Score: <span id="score">0</span> |
+    ❤️ Lives: <span id="lives">3</span> |
+    ⏱ Time: <span id="time">60</span>
+</div>
+
+<div class="game"></div>
+
+<button onclick="restart()">Restart 🔄</button>
+
+<div id="msg"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

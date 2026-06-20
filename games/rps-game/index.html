@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPS GOD MODE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔥 RPS GOD MODE</h1>
+
+    <div class="score">
+        <div>👤 You: <span id="playerScore">0</span></div>
+        <div>🤖 AI: <span id="aiScore">0</span></div>
+    </div>
+
+    <div class="streak">
+        🏆 Streak: <span id="streak">0</span>
+    </div>
+
+    <h2 id="result">Choose your weapon</h2>
+
+    <div class="choices">
+
+        <button onclick="play('rock')">✊ Rock</button>
+        <button onclick="play('paper')">✋ Paper</button>
+        <button onclick="play('scissors')">✌ Scissors</button>
+
+    </div>
+
+    <div class="bottom">
+        <button id="musicBtn">🎵 Music</button>
+        <button id="resetBtn">🔁 Reset</button>
+    </div>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3">
+</audio>
+
+<audio id="winSound">
+    <source src="win.mp3">
+</audio>
+
+<audio id="loseSound">
+    <source src="lose.mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

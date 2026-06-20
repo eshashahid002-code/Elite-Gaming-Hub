@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arcade Puzzle Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎮 ARCADE PUZZLE PRO</h1>
+
+    <div class="stats">
+        <span>🎯 Moves: <b id="moves">0</b></span>
+        <span>⏱ Time: <b id="timer">0</b>s</span>
+        <span>🏆 Best: <b id="best">0</b></span>
+    </div>
+
+    <select id="level">
+        <option value="3">Easy (3x3)</option>
+        <option value="4" selected>Medium (4x4)</option>
+        <option value="5">Hard (5x5)</option>
+    </select>
+
+    <div id="puzzle"></div>
+
+    <div class="buttons">
+        <button id="shuffleBtn">🔀 Shuffle</button>
+        <button id="restartBtn">🔁 Restart</button>
+    </div>
+
+</div>
+
+<!-- click sound -->
+<audio id="clickSound">
+    <source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
